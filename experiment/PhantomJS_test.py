@@ -9,6 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
 from selenium.webdriver.remote.webelement import WebElement
 
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
 import time
 from lxml import etree
 
@@ -28,23 +30,16 @@ class chrome_headless():
 
     # 绑定类参数，在实例化时需要传入(建议使用key=value传值模式)：
     # chrome的路径：chrome_dirver_path
-    def __init__(self, cdp):
-        self.chrome_dirver_path = cdp
+    def __init__(self, dp):
+        self.dirver_path = dp
 
-    # 将初始化selenium使chrome_headless生效
-    # 返回值self.chen_opener为入口
     def link_selenium(self):
-        chen_chrome_options = Options()
-        chen_chrome_options.add_argument('--headless')
-        chen_chrome_options.add_argument('--disable-gpu')
-        chen_chrome_options.add_argument('lang=zh_CN.UTF-8')
-        chen_chrome_options.add_argument('user-agent = "ozilla/5.0 (compatible; WOW64; MSIE 10.0; Windows NT 6.2)"')
-        chen_chrome_options.add_argument('Accept = "text/html,application/xhtml+xml, application/xml;q=0.9,image/webp,*/*;q=0.8"')
-        prefs = {"profile.managed_default_content_settings.images": 2}
-        chen_chrome_options.add_experimental_option("prefs", prefs)
-        self.chen_opener = webdriver.Chrome(chrome_options = chen_chrome_options,
-                                       executable_path = self.chrome_dirver_path)
+        dcap = dict(DesiredCapabilities.PHANTOMJS)
+        dcap["phantomjs.page.settings.userAgent"] = (
+            "Mozilla/5.0 (compatible; WOW64; MSIE 10.0; Windows NT 6.2)")
+        self.chen_opener = webdriver.PhantomJS(desired_capabilities=dcap, executable_path = self.dirver_path )
         return self.chen_opener
+
 
     # 接受一个网址，返回js渲染后的源码
     def chen_js_get(self, the_url):
@@ -121,7 +116,8 @@ class chrome_headless():
 
 
 if __name__ == '__main__':
-    test1 = chrome_headless(cdp='/home/chenyu/chensf/chromedriver')
+    # test1 = chrome_headless(dp='/home/chenyu/chensf/chromedriver')
+    test1 = chrome_headless(dp='/home/chenyu/chensf/phantomjs')
     test1.link_selenium()
     try:
         # 显示等待测试
