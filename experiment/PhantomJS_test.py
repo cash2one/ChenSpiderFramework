@@ -63,7 +63,7 @@ class chrome_headless():
         the_value = self.chen_opener.find_element_by_xpath(want_X).text
         print the_value
         self.chen_opener.close()
-        return the
+        return the_value
 
 
     # 隐式等待xpath版
@@ -113,6 +113,32 @@ class chrome_headless():
             print i
         return the_value
 
+    # 模拟登录
+    def cookies_get(self, the_url, username, password):
+        # self.chen_opener.get(the_url)
+
+        # 登录页面
+        # login_url = self.chen_opener.find_element_by_xpath("//a[@id='cj_yaodai_loginUrl']/@href")
+
+        self.chen_opener.get(the_url)
+
+        # 获取登录信息框
+        username_input = self.chen_opener.find_element_by_xpath("//input[@id='username']")
+        password_input = self.chen_opener.find_element_by_xpath("//input[@id='password']")
+
+        # 发送信息
+        username_input.send_keys(username)
+        password_input.send_keys(password)
+
+        enter_button = self.chen_opener.find_element_by_xpath("//button")
+        enter_button.click()
+
+        time.sleep(1)
+        cookie = self.chen_opener.get_cookies()
+
+        print cookie
+
+
 
 
 if __name__ == '__main__':
@@ -133,10 +159,13 @@ if __name__ == '__main__':
         #                want_X = "//span[text()='效果图']")
 
         # js　渲染后的元素获取测试
-        test1.js_get_we_see(the_url='http://www.wxfcw.cn/newhouse/201709/872975/photos.html#caid=24',
-                         want_X='//li//img/@src')
-        # test1.js_get_we_see(the_url='http://www.wxfcw.cn/archive.php?aid=873056#g=1',
-        #                  want_X=u"//dl/dt[text()='户型居室:']//following-sibling::dd[1]/text()")
+        # test1.js_get_we_see(the_url='http://www.wxfcw.cn/newhouse/201709/872975/photos.html#caid=24',
+        #                  want_X='//li//img/@src')
+        test1.js_get_we_see(the_url='http://www.wxfcw.cn/archive.php?aid=873056#g=1',
+                         want_X=u"//dl/dt[text()='户型居室:']//following-sibling::dd[1]/text()")
+
+        # test1.cookies_get(the_url="https://passport.lianjia.com/cas/login?service=http://user.sh.lianjia.com/index/ershou",
+        #                   username = "13071131373", password="qazwsx1234")
 
     finally:
         try:

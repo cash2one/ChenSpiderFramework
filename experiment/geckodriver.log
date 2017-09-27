@@ -1,0 +1,60 @@
+1506480547894	geckodriver	INFO	geckodriver 0.19.0
+1506480547901	geckodriver	INFO	Listening on 127.0.0.1:40095
+1506480549076	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BIs3XaNvtuVo"
+1506480551661	Marionette	INFO	Enabled via --marionette
+1506480556464	Marionette	INFO	Listening on port 43201
+1506480556517	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1506480556567	Marionette	DEBUG	loaded listener.js
+1506480556614	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1506480557118	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1506480557118	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1506480560146	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.wxfcw.cn/archive.php?aid=873056#g=1"
+1506480560699	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://360fenxi.mediav.com/mv.html"
+1506480560957	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://ckmap.mediav.com/b?type=10"
+1506480561791	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://3m.mediav.com/ckmap.htm#prefix=https://ckmap.mediav.com/m?thirdparty_id=1&thirdparty_cookie_id=0er2r22ncvpjrdvqcmik0f2j5g"
+1506480562010	Marionette	DEBUG	Received DOM event "pageshow" for "https://3m.mediav.com/ckmap.htm#prefix=https://ckmap.mediav.com/m?thirdparty_id=1&thirdparty_cookie_id=0er2r22ncvpjrdvqcmik0f2j5g"
+1506480563739	Marionette	DEBUG	Received DOM event "pageshow" for "http://ckmap.mediav.com/b?type=10"
+1506480563741	Marionette	DEBUG	Received DOM event "pageshow" for "http://360fenxi.mediav.com/mv.html"
+1506480563763	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.wxfcw.cn/archive.php?aid=873056#g=1"
+1506480737293	geckodriver	INFO	geckodriver 0.19.0
+1506480737300	geckodriver	INFO	Listening on 127.0.0.1:34855
+1506480738446	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.R85nH7IgeeEL"
+1506480739360	Marionette	INFO	Enabled via --marionette
+1506480742389	Marionette	INFO	Listening on port 34731
+1506480742612	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1506480742674	Marionette	DEBUG	loaded listener.js
+1506480742718	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1506480743049	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1506480743050	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1506480743470	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://passport.lianjia.com/cas/login?service=http://user.sh.lianjia.com/index/ershou"
+1506480743969	Marionette	DEBUG	Received DOM event "pageshow" for "https://passport.lianjia.com/cas/login?service=http://user.sh.lianjia.com/index/ershou"
+1506480744013	Marionette	INFO	New connections will no longer be accepted
+[Child 11278] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-S0wyi8/firefox-55.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1506480820951	geckodriver	INFO	geckodriver 0.19.0
+1506480820957	geckodriver	INFO	Listening on 127.0.0.1:47167
+1506480822106	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.FeGsZVWHi3uX"
+1506480822872	Marionette	INFO	Enabled via --marionette
+1506480824861	Marionette	INFO	Listening on port 42729
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1506480824929	Marionette	WARN	TLS certificate errors will be ignored for this session
+1506480824989	Marionette	DEBUG	loaded listener.js
+1506480825031	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1506480825361	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1506480825361	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1506480825772	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://passport.lianjia.com/cas/login?service=http://user.sh.lianjia.com/index/ershou"
+1506480826069	Marionette	DEBUG	Received DOM event "pageshow" for "https://passport.lianjia.com/cas/login?service=http://user.sh.lianjia.com/index/ershou"
+1506480826535	Marionette	DEBUG	Received DOM event "beforeunload" for "https://passport.lianjia.com/cas/login?service=http://user.sh.lianjia.com/index/ershou"
+1506480827112	Marionette	DEBUG	Received DOM event "pagehide" for "https://passport.lianjia.com/cas/login?service=http://user.sh.lianjia.com/index/ershou"
+1506480827114	Marionette	DEBUG	Received DOM event "unload" for "https://passport.lianjia.com/cas/login?service=http://user.sh.lianjia.com/index/ershou"
+JavaScript warning: http://sh.lianjia.com/public/js/lib/angular.min.js, line 184: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1506480828891	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://sh.lianjia.com/"
+1506480832203	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://sh.lianjia.com/"
+1506480832210	Marionette	DEBUG	Received DOM event "pageshow" for "http://sh.lianjia.com/"
+1506480832307	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://cms.gtags.net/w?a=696&zid=Xn_jQ2C5oJ2Zq7-QtjIUYn_YkGdFghAv"
+1506480832877	Marionette	DEBUG	Received DOM event "pageshow" for "http://cms.gtags.net/w?a=696&zid=Xn_jQ2C5oJ2Zq7-QtjIUYn_YkGdFghAv"
+1506480836373	Marionette	DEBUG	Received DOM event "pageshow" for "http://sh.lianjia.com/"
+1506480837417	Marionette	INFO	New connections will no longer be accepted
+[Child 11433] WARNING: pipe error (20): 连接被对方重设: file /build/firefox-S0wyi8/firefox-55.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 11433] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-S0wyi8/firefox-55.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
