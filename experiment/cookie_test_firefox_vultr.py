@@ -12,6 +12,8 @@ from selenium.webdriver.remote.webelement import WebElement
 import time
 from lxml import etree
 
+from pyvirtualdisplay import Display
+
 
 
 # 需要有chrome有头浏览器和chromedriver
@@ -76,6 +78,10 @@ class firefox_selenium():
 
 
 if __name__ == '__main__':
+
+    display = Display(visible=0, size=(900, 800))
+    display.start()
+
     test1 =firefox_selenium(dp='/root/chensf/geckodriver')
     test1.link_selenium()
     try:
@@ -85,6 +91,7 @@ if __name__ == '__main__':
     finally:
         try:
             test1.chen_opener.quit()
+            display.stop()
             print '-----------------*-------------------'
             print '---***SELENIUM CLOSED SUCCESS!***---'
         except:
